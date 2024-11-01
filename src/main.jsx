@@ -10,11 +10,12 @@ import {
 import Root from './components/Root/Root.jsx';
 import Home from './components/Home/Home.jsx';
 import BookDetails from './components/BookDetails/BookDetails.jsx'
+import Error from './components/Error/Error.jsx'
 
 
 const router = createBrowserRouter([
   {
-
+    errorElement: <Error></Error>,
     path: "/",
     element: <Root></Root>,
     children: [
