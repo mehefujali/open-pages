@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Root from './components/Root/Root.jsx';
 import Home from './components/Home/Home.jsx';
+import BookDetails from './components/BookDetails/BookDetails.jsx'
 
 
 const router = createBrowserRouter([
@@ -33,6 +34,11 @@ const router = createBrowserRouter([
       {
         path: '/pages-to-read',
         element: <h1>pages to read</h1>
+      },
+      {
+        path: '/books/:bookId',
+        loader: () => fetch('booksData.json'),
+        element: <BookDetails></BookDetails>
       }
     ]
   },
