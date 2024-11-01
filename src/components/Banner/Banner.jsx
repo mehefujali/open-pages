@@ -9,7 +9,7 @@ const Banner = () => {
                               <button className=' mt-4 btn-lg rounded-lg font-bold bg-[#cca97b] text-white '>View The List</button>
                         </div>
                         <div className=' w-full md:w-3/5 lg:w-2/5'>
-                              <img className=' w-full  rounded-lg' src={book} alt="" />
+                              <img className=' w-full  rounded-xl' src={book} alt="" />
                         </div>
                   </div>
             </div>

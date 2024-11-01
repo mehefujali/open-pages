@@ -25,13 +25,15 @@ const Nav = () => {
                                           </div>
                                     </ul>
                               </div>
-                              <Link to='/'><a className=" text-md sm:text-xl md:text-2xl font-bold ">Open pages</a></Link>
+                              <Link to='/' className=" flex items-center gap-2 ">
+                                    <img className=" w-11" src="https://static.vecteezy.com/system/resources/thumbnails/049/571/607/small/illustration-of-an-open-book-on-the-middle-page-png.png" alt="" />
+                                    <a className=" text-md sm:text-xl md:text-2xl font-bold ">OPEN PAGES</a></Link>
                         </div>
                         <div className="navbar-center hidden lg:flex">
-                              <ul className="menu menu-horizontal px-1 gap-8 items-center  " id="Navlinks">
-                                    <NavLink to="/home">Home</NavLink>
-                                    <NavLink to="/listed-books">Listed Books</NavLink>
-                                    <NavLink to='/pages-to-read'>Pages to Read</NavLink>
+                              <ul className="menu menu-horizontal px-1  items-center  " id="Navlinks">
+                                    <NavLink className='linknav' to="/home">Home</NavLink>
+                                    <NavLink className='linknav' to="/listed-books">Listed Books</NavLink>
+                                    <NavLink className='linknav' to='/pages-to-read'>Pages to Read</NavLink>
                               </ul>
                         </div>
                         <div className="navbar-end flex gap-1 sm:gap-2 md:gap-4 items-center">

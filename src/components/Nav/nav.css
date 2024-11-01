@@ -1,6 +1,10 @@
 #Navlinks>.active {
       border: 2px solid #cca97b;
+
+      color: #cca97b;
+}
+
+#Navlinks .linknav {
       padding: 10px 30px;
       border-radius: 8px;
-      color: #cca97b;
 }
