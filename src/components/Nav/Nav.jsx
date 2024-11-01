@@ -35,7 +35,7 @@ const Nav = () => {
                               </ul>
                         </div>
                         <div className="navbar-end flex gap-1 sm:gap-2 md:gap-4 items-center">
-                              <a className="btn btn-sm md:btn-md text-[#cca97b] btn-outline border-[#cca97b] hover:bg-[#cca97b] hover:border-none">Sign In</a>
+                              <a className="btn btn-sm md:btn-md text-[#cca97b] btn-outline border-[#cca97b] hover:bg-[#cca97b] hover:border-none hover:text-white">Sign In</a>
                               <a className="btn btn-sm md:btn-md bg-[#cca97b] hover:bg-[#bb9e79] text-white">Sign up</a>
                         </div>
                   </div>
