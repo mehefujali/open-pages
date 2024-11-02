@@ -79,10 +79,10 @@ Visit `http://localhost:3000` to start browsing books!
 ## 📸 **Screenshots**
 
 ### 📚 Home Page
-![Home Page Screenshot](https://link-to-homepage-screenshot.com)
+![Home Page Screenshot](https://i.ibb.co/59LhnsG/image.png)
 
 ### 📖 Book Details
-![Book Details Screenshot](https://link-to-details-page-screenshot.com)
+![Book Details Screenshot](https://i.ibb.co/fG5H8nY/image.png)
 
 ---
 
