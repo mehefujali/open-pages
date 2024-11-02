@@ -9,11 +9,11 @@ const BookDetails = () => {
       return (
             <div>
                   <div className=" flex ">
-                        <div className=" flex gap-8 items-center w-fit  border-2 bg-[#cca97b23] p-7 rounded-lg">
-                              <div className=" w-2/6">
-                                    <img src={image} alt="" />
+                        <div className=" flex flex-col lg:flex-row gap-8 items-center w-fit  border-2 bg-[#cca97b23] p-7 rounded-lg">
+                              <div className=" lg:w-2/6">
+                                    <img className=" w-96" src={image} alt="" />
                               </div>
-                              <div className=" w-2/5  text-md flex flex-col gap-2">
+                              <div className=" lg:w-2/5  text-md flex flex-col gap-2">
                                     <h1 className=" text-3xl font-bold">{bookName}</h1>
                                     <p>By : {author}</p>
                                     <div className=" border-b"></div>
