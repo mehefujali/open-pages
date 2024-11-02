@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { setItemLocal } from "../../utility/localStore";
 
 const BookDetails = () => {
       const { bookId } = useParams()
@@ -33,8 +34,12 @@ const BookDetails = () => {
                                     <p>Rating: {rating}</p>
 
                                     <div className=" mt-3 flex gap-1 sm:gap-2 md:gap-4 items-center">
-                                          <a className="btn btn-sm md:btn-md text-[#cca97b] btn-outline border-[#cca97b] hover:bg-[#cca97b] hover:border-none hover:text-white">Read</a>
-                                          <a className="btn btn-sm md:btn-md bg-[#cca97b] hover:bg-[#bb9e79] text-white">Wishlist</a>
+                                          <a className="btn btn-sm md:btn-md text-[#cca97b] btn-outline border-[#cca97b] hover:bg-[#cca97b] hover:border-none hover:text-white"
+                                                onClick={() => setItemLocal('read', bookId)}
+                                          >Read</a>
+                                          <a className="btn btn-sm md:btn-md bg-[#cca97b] hover:bg-[#bb9e79] text-white"
+                                                onClick={() => setItemLocal('watch', bookId)}
+                                          >Wishlist</a>
                                     </div>
 
                               </div>
