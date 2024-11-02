@@ -28,7 +28,7 @@ const WishlistBook = ({ book }) => {
                               <p>Category : {category}</p>
                               <p>Rating : {rating}</p>
                               <div className=" border-b border w-full"></div>
-                              <Link ><button className=" btn bg-[#ffcb88]">View Details</button></Link>
+                              <Link to={`/books/${bookId}`} ><button className=" btn bg-[#ffcb88]">View Details</button></Link>
                         </div>
                   </div>
             </div>
