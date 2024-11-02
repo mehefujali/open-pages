@@ -1,10 +1,10 @@
 
 import { FaStar } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Book = ({ book }) => {
       const { bookName, image, author, bookId, rating, category, tags } = book
       return (
-            <NavLink to={`/books/${bookId}`} className=" p-7 rounded-xl border-2 border-[#cca97b80] flex flex-col gap-3">
+            <Link to={`/books/${bookId}`} className=" p-7 rounded-xl border-2 border-[#cca97b80] flex flex-col gap-3">
                   <div className="bg-[#cca97b2d] w-full h-full p-8 rounded-xl">
                         <img className=" w-52 h-72 mx-auto" src={image} alt="" />
                   </div>
@@ -24,7 +24,7 @@ const Book = ({ book }) => {
                   </div>
 
 
-            </NavLink>
+            </Link>
       );
 };
 

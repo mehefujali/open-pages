@@ -2,8 +2,9 @@ import { useLoaderData, useParams } from "react-router-dom";
 
 const BookDetails = () => {
       const { bookId } = useParams()
+      const id = parseInt(bookId)
       const books = useLoaderData()
-      const book = books.find(book => book.bookId === parseInt(bookId))
+      const book = books.find(book => book.bookId === id)
       const { bookName, image, author, rating, category, tags, publisher, yearOfPublishing, review, totalPages } = book
       return (
             <div>
