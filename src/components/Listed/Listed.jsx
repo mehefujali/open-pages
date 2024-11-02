@@ -22,7 +22,7 @@ const Listed = () => {
 
                         <TabPanel>
                               <div>
-                                    <ReadBooks></ReadBooks>
+                                    <ReadBooks books={books}></ReadBooks>
                               </div>
                         </TabPanel>
                         <TabPanel>
