@@ -12,7 +12,7 @@ const getFromLocal = (key) => {
 
 
 
-const setItemLocal = (key, id) => {
+const setItemLocal = (key, id, bookName, location) => {
 
 
       let getData = getFromLocal(key)
@@ -20,14 +20,14 @@ const setItemLocal = (key, id) => {
       console.log(getData);
 
       if (getData.includes(id)) {
-            toast.error('already added')
+            toast.error(`${bookName} Already Added to ${location}`)
             return
       }
       else {
             getData.push(id)
             const getDataStringify = JSON.stringify(getData)
             localStorage.setItem(key, getDataStringify)
-            toast.success(`${key} Added`)
+            toast.success(`${bookName} Added to ${location}`)
       }
 
 
