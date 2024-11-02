@@ -12,6 +12,7 @@ import Home from './components/Home/Home.jsx';
 import BookDetails from './components/BookDetails/BookDetails.jsx'
 import Error from './components/Error/Error.jsx'
 import Listed from './components/Listed/Listed.jsx'
+import PagesReadChart from './components/PagesReadChart/PagesReadChart.jsx'
 
 
 const router = createBrowserRouter([
@@ -36,7 +37,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/pages-to-read',
-        element: <h1>pages to read</h1>
+        loader: () => fetch('/booksData.json'),
+        element: <PagesReadChart></PagesReadChart>
       },
       {
         path: '/books/:bookId',

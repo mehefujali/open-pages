@@ -4,7 +4,7 @@
 
 Welcome to **Listed Books**, your gateway to exploring a world of books! Whether you're into thrillers, romances, or sci-fi, find something here to satisfy your reading cravings. Let’s get started!
 
-![Listed Books Banner](https://open-pages.netlify.app/listed-books)
+![Listed Books Banner](https://i.ibb.co/QnyhrKd/image.png)
 
 ---
 
