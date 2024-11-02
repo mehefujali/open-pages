@@ -1,5 +1,4 @@
 import { toast } from "react-toastify"
-
 const getFromLocal = (key) => {
       const data = localStorage.getItem(key)
       if (data) {
@@ -11,14 +10,9 @@ const getFromLocal = (key) => {
 }
 
 
-
 const setItemLocal = (key, id, bookName, location) => {
 
-
       let getData = getFromLocal(key)
-
-      console.log(getData);
-
       if (getData.includes(id)) {
             toast.error(`${bookName} Already Added to ${location}`)
             return
@@ -29,8 +23,5 @@ const setItemLocal = (key, id, bookName, location) => {
             localStorage.setItem(key, getDataStringify)
             toast.success(`${bookName} Added to ${location}`)
       }
-
-
 }
-
-export { setItemLocal }
+export { setItemLocal, getFromLocal }

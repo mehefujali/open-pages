@@ -38,7 +38,7 @@ const BookDetails = () => {
                                                 onClick={() => setItemLocal('read', bookId, bookName, 'Read')}
                                           >Read</a>
                                           <a className="btn btn-sm md:btn-md bg-[#cca97b] hover:bg-[#bb9e79] text-white"
-                                                onClick={() => setItemLocal('watch', bookId, bookName, 'Wishlist')}
+                                                onClick={() => setItemLocal('list', bookId, bookName, 'Wishlist')}
                                           >Wishlist</a>
                                     </div>
 
