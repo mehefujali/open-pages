@@ -15,7 +15,7 @@ const PagesReadChart = () => {
       const readBooks = books.filter(book => readBooksId.includes(book.bookId.toString()));
 
       return (
-            <div className=" flex w-full h-full items-start justify-end">
+            <div className=" flex w-full h-full items-center justify-center">
                   <ResponsiveContainer width="100%" height={400}>
                         <BarChart data={readBooks}>
                               <CartesianGrid strokeDasharray="3 3" />

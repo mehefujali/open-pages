@@ -6,14 +6,14 @@ const WishlistBook = ({ book }) => {
 
       return (
             <div className=" mt-12">
-                  <div className=" flex gap-6 p-5 rounded-lg border-2">
+                  <div className=" flex  flex-col md:flex-row gap-6 p-5 rounded-lg border-2">
                         <div className=" bg-[#cca97b80] w-fit p-7 rounded-lg">
                               <img className=" w-44" src={image} alt="" />
                         </div>
                         <div className=" flex flex-col gap-3 w-full">
                               <h1 className=" text-2xl font-semibold">{bookName}</h1>
                               <p>By : {author}</p>
-                              <div className=" flex gap-2 items-center">
+                              <div className=" flex flex-col items-start  md:flex-row gap-2 md:items-center">
                                     <p className=" flex gap-4"><span className=" font-semibold">Tag:</span>
                                           {
                                                 tags.map(tag => <p className="bg-[#cca97b38] text-[#a07d4f] px-1 rounded-lg">{tag}</p>)
