@@ -1,16 +1,16 @@
 import { useLoaderData } from "react-router-dom";
-import { getFromLocal } from "../../utility/localStore";
+
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import ReadBooks from "../ReadBooks/ReadBooks";
+import WishlistBooks from "../WishlistBooks/WishlistBooks";
+
 
 const Listed = () => {
       const books = useLoaderData()
 
 
-      const listedBooksId = getFromLocal('list')
-      const listedBooks = books.filter(listedBook => parseInt(listedBooksId) === listedBook.bookId)
-      console.log(listedBooks);
+
 
       return (
             <div>
@@ -26,7 +26,7 @@ const Listed = () => {
                               </div>
                         </TabPanel>
                         <TabPanel>
-                              <h2>Any content 2</h2>
+                              <WishlistBooks books={books} ></WishlistBooks>
                         </TabPanel>
                   </Tabs>
 

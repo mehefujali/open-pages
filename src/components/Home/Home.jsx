@@ -6,6 +6,7 @@ const Home = () => {
       const books = useLoaderData()
       return (
             <div>
+
                   <Banner></Banner>
                   <div>
                         <Books books={books}></Books>
