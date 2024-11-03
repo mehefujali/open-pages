@@ -10,7 +10,13 @@ const Root = () => {
             <div>
                   <Nav></Nav>
                   <div className=" container mx-auto mt-14 px-4  min-h-[calc(100vh-232px)]" id="main-outlet">
-                        <ToastContainer />
+                        <ToastContainer
+                              autoClose={600}
+                              theme="colored"
+
+
+
+                        />
                         <Outlet></Outlet>
                   </div>
                   <footer className=" mt-12">
